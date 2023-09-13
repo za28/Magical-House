@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Character
+comment0.text=\n\ Class\ Character\ -\ a\ Character\ in\ an\ adventure\ game.\n\ \n\ This\ class\ is\ part\ of\ the\ "Magical\ House"\ application.\ \n\ "Magical\ House"\ is\ a\ very\ simple,\ text\ based\ adventure\ game.\n\ \n\ A\ "Character"\ represents\ one\ character\ in\ the\ game.\ \n\ A\ character\ has\ speeches.\ Each\ speech\ is\ for\ a\ particular\ room.\n\n\ @author\ Zahra\ Amaan(K21011879).\n\ @version\ 2021.12.03\n
+comment1.params=room
+comment1.target=Character(Room)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Character\n\ Initialises\ the\ current\ room\ of\ the\ character.\n\ @Param\ room\ The\ room\ you\ want\ to\ initialise\ the\ characters\ current\ room\ to.\n
+comment2.params=room\ speech
+comment2.target=void\ addSpeech(Room,\ java.lang.String)
+comment2.text=\n\ Adds\ the\ characters\ speech\ for\ a\ room.\n\ @param\ \ room\ The\ room\ you\ want\ to\ add\ the\ characters\ speech\ for.\n
+comment3.params=room
+comment3.target=java.lang.String\ getSpeech(Room)
+comment3.text=\n\ Generates\ a\ string\ of\ the\ characters\ speech\ for\ a\ room.\n\ @param\ \ room\ The\ room\ you\ want\ to\ get\ the\ characters\ speech\ for.\n\ @Return\ speech\ The\ characters\ speech\ for\ a\ room.\n
+comment4.params=room
+comment4.target=boolean\ inRoom(Room)
+comment4.text=\n\ Checks\ if\ a\ character\ is\ in\ a\ room.\n\ @param\ \ room\ The\ room\ you\ want\ to\ check\ the\ character\ is\ is.\n\ @Return\ (room\=\=currentRoom)\ True\ if\ a\ character\ is\ in\ the\ \n\ room\ provided.\ False\ if\ a\ character\ is\ not\ in\ the\ room\n
+comment5.params=room
+comment5.target=void\ changeRoom(Room)
+comment5.text=\n\ Changes\ the\ current\ room\ of\ the\ character.\n\ @param\ \ room\ The\ room\ to\ change\ the\ characters\ room\ to.\n
+numComments=6
