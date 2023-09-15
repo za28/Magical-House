@@ -1,11 +1,17 @@
 **Magical House**
 
+<img width="452" alt="image" src="https://github.com/za28/Magical-House/assets/114661472/f9523ab4-c1a2-41f7-b445-92275e0b4f52">
+
+
 You are in a Magical House where each room is a different country. The Magical House consists of 6 rooms: Japan, Italy, Mexico, India, Spain and a special Portal room that transports you to a random room in the house. Your mission is to go home. In order to go home, you must visit all the countries in this house and collect the traditional food of that country. You can carry the food items in your bag but you can’t carry all the items, so first you must find and gain power in order to increase the total weight that you can carry. Also, remember that you can only carry food items and you can’t carry random objects. There are 2 characters in this game: a fairy and a dragon. The fairy accompanies you on your mission and you can ask the fairy for clues. Whereas the dragon appears in rooms randomly. If you run into the dragon on your mission, you can ask the dragon for a fact about the country that you are in. Once you have collected the traditional food from each country and gone home, you have completed the mission. However, if you fail to take all the correct items then you will not be able to go home and you will not be able to complete the mission.
 
 The game has 7 classes: Game, Room, Command, CommandWords, Parser, Player and Character. To play the game you create a Game object and call the Play() method on it. This method contains the main command loop it reads and executes commands until the game is over.  The Parser reads the users input and the Game tries to evaluate these commands. The player class represents a player in the game and the character class represents a character in the game. The player and character are initialised and created in the Game class. The rooms are also initialised and created in the Game class. Items are added to the rooms. For the game to end the loop condition of the main loop in the play() method must become false. 
 
 **Map**
- 
+
+<img width="452" alt="image" src="https://github.com/za28/Magical-House/assets/114661472/5ab8ef51-0b29-45e9-a153-7e179bcabbed">
+
+
 In my game the portal room doesn’t hold any items but is able to hold items. All the other rooms hold 3-4 items to begin with. The items are put into the rooms when the createRooms method of the Game class is called. 3 items are added to all the room apart from the portal room, using the addItems method of the Room class. The power item is put into one of the rooms at random. 
 I have a “take” command which allows the user to take items from rooms and put them in their bag. In my game the player can only take food items so the player cannot take items such as “shoe” and “crayon”. The player can only take items from the current room that they are in. when the user inputs “take sushi” the takeItem methos of the Game class is called. The item is added to the players bag by calling the addItemToBag method on the player and passing in the items name and weight as parameters. The item is then removed from the current room by calling the removeItem method on the currentRoom and passing in the name of the item as a parameter. The player cannot carry any more items once their bag is full, so the take method also checks if the players bag is full by calling the bagFull method on the player. If the players bag is full, they are not able to take any more items.
 However, the player can take more items if they return some items first. I also have a “return” method which allows the player to return items from their bag to rooms. The player can only return items to the current room that they are in and the player can only return the items that are in their bag.
