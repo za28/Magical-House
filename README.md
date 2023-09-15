@@ -9,7 +9,7 @@ The game has 7 classes: Game, Room, Command, CommandWords, Parser, Player and Ch
 
 **Map**
 
-<img width="452" alt="image" src="https://github.com/za28/Magical-House/assets/114661472/5ab8ef51-0b29-45e9-a153-7e179bcabbed">
+<img width="255" alt="image" src="https://github.com/za28/Magical-House/assets/114661472/b4a49fd0-cbb8-4b4d-9aed-69ad177ba8af">
 
 
 In my game the portal room doesn’t hold any items but is able to hold items. All the other rooms hold 3-4 items to begin with. The items are put into the rooms when the createRooms method of the Game class is called. 3 items are added to all the room apart from the portal room, using the addItems method of the Room class. The power item is put into one of the rooms at random. 
